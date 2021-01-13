@@ -1,0 +1,113 @@
+.main-nav {
+  padding-top: 19px;
+  background-color: #161c36;
+}
+
+.main-nav--no-js.main-nav {
+  background-color: white;
+}
+
+.main-nav__top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 76px;
+}
+
+.main-nav__logo {
+  position: relative;
+}
+
+.main-nav--no-js .main-nav__logo::before {
+  @include pseudo(100%, 100%);
+  top: 0;
+  left: 0;
+  background-image: url("../img/logo-mobile-open.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-nav__toggler {
+  width: 40px;
+  height: 19px;
+  background-image: url("../img/toogler-open.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
+}
+
+.main-nav__menu-list {
+  display: none;
+}
+
+.main-nav--no-js .main-nav__menu-list {
+  @include reset-list;
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-nav__menu-link {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  text-transform: uppercase;
+  color: $blue;
+}
+
+.main-nav--no-js .main-nav__auth-button {
+  min-height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 66px;
+  background-color: $basic-yellow;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $darker-blue;
+}
+
+.main-nav--no-js .main-nav__contacts-list {
+  @include reset-list;
+
+  .main-nav__contacts-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      width: 45px;
+      height: 45px;
+      display: block;
+      background-color: $darker-blue100;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+      margin-right: 16px;
+    }
+
+    &--phone::before {
+      background-image: url("../img/icon-telephone.svg");
+    }
+
+    &--mail::before {
+      background-image: url("../img/icon-mail.svg");
+    }
+  }
+
+  .main-nav__contacts-link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #192144;
+  }
+}

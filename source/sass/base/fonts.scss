@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "BlogerSans";
+  font-weight: 300;
+  font-style: normal;
+  src: local("BloggerSans"),
+    url("../fonts/bloggersans-light.woff2"),
+    url("../fonts/bloggersans-light.woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BlogerSans";
+  font-weight: 300;
+  font-style: italic;
+  src: local("BloggerSans"),
+    url("../fonts/bloggersans-lightitalic.woff2"),
+    url("../fonts/bloggersans-lightitalic.woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BlogerSans";
+  font-weight: 400;
+  font-style: normal;
+  src: local("BloggerSans"),
+    url("../fonts/bloggersans.woff2"),
+    url("../fonts/bloggersans.woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BlogerSans";
+  font-weight: 500;
+  font-style: normal;
+  src: local("BloggerSans"),
+    url("../fonts/bloggersans-medium.woff2"),
+    url("../fonts/bloggersans-medium.woff");
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "BlogerSans";
+  font-weight: 500;
+  font-style: italic;
+  src: local("BloggerSans"),
+    url("../fonts/bloggersans-mediumitalic.woff2"),
+    url("../fonts/bloggersans-mediumitalic.woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BlogerSans";
+  font-weight: 700;
+  font-style: normal;
+  src: local("BloggerSans"),
+    url("../fonts/bloggersans-bold.woff2"),
+    url("../fonts/bloggersans-bold.woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BlogerSans";
+  font-weight: 700;
+  font-style: normal;
+  src: local("BloggerSans"),
+    url("../fonts/bloggersans-bolditalic.woff2"),
+    url("../fonts/bloggersans-bolditalic.woff");
+  font-display: swap;
+}

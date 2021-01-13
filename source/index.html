@@ -1,12 +1,51 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Погнали</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Погнали</title>
+</head>
 
-  </body>
+<body class="page__body">
+  <header class="page__header">
+    <nav class="main-nav main-nav--no-js">
+      <div class="wrapper main-nav__inner">
+        <div class="main-nav__top">
+          <a href="#" class="main-nav__logo logo">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/logo-mobile.png">
+              <source media="(min-width: 1440px)" srcset="img/logo-mobile.png">
+              <img src="img/logo-mobile.png" width="96" height="15" alt="Логотип">
+            </picture>
+          </a>
+          <button class="main-nav__toggler"></button>
+        </div>
+        <ul class="main-nav__menu-list">
+          <li class="main-nav__menu-item">
+            <a href="#" class="main-nav__menu-link">О сервисе</a>
+          </li>
+          <li class="main-nav__menu-item">
+            <a href="#" class="main-nav__menu-link">Направления</a>
+          </li>
+          <li class="main-nav__menu-item">
+            <a href="#" class="main-nav__menu-link">Попутчики</a>
+          </li>
+        </ul>
+        <a href="#" class="main-nav__auth-button">авторизация</a>
+        <ul class="main-nav__contacts-list">
+          <li class="main-nav__contacts-item main-nav__contacts-item--phone">
+            <a href="tel:+74951111111" class="main-nav__contacts-link" type="">8 800 555-86-28</a>
+          </li>
+          <li class="main-nav__contacts-item main-nav__contacts-item--mail">
+            <a href="mailto:mail@htmlacademy.ru" class="main-nav__contacts-link">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+        <ul class="main-nav__social-link"></ul>
+      </div>
+    </nav>
+  </header>
+</body>
+
 </html>
