@@ -1,23 +1,31 @@
 .main-nav {
   padding-top: 19px;
+  padding-bottom: 19px;
   background-color: #161c36;
 }
 
-.main-nav--no-js.main-nav {
+.main-nav--no-js.main-nav,
+.main-nav--open.main-nav {
   background-color: white;
 }
 
 .main-nav__top {
   display: flex;
   align-items: center;
+}
+
+.main-nav--no-js .main-nav__top,
+.main-nav--open .main-nav__top {
   margin-bottom: 76px;
 }
 
-.main-nav__logo {
+.main-nav--no-js .main-nav__logo,
+.main-nav--open .main-nav__logo {
   position: relative;
 }
 
-.main-nav--no-js .main-nav__logo::before {
+.main-nav--no-js .main-nav__logo::before,
+.main-nav--open .main-nav__logo::before {
   @include pseudo(100%, 100%);
   top: 0;
   left: 0;
@@ -37,11 +45,20 @@
   margin-left: auto;
 }
 
+.main-nav--open .main-nav__toggler {
+  background-image: url("../img/toogler-close.svg");
+}
+
+.main-nav--no-js .main-nav__toggler {
+  display: none;
+}
+
 .main-nav__menu-list {
   display: none;
 }
 
-.main-nav--no-js .main-nav__menu-list {
+.main-nav--no-js .main-nav__menu-list,
+.main-nav--open .main-nav__menu-list {
   @include reset-list;
   width: 100%;
   margin-bottom: 50px;
@@ -58,7 +75,8 @@
   color: $blue;
 }
 
-.main-nav--no-js .main-nav__auth-button {
+.main-nav--no-js .main-nav__auth-button,
+.main-nav--open .main-nav__auth-button {
   min-height: 50px;
   width: 100%;
   display: flex;
@@ -74,8 +92,18 @@
   color: $darker-blue;
 }
 
-.main-nav--no-js .main-nav__contacts-list {
+.main-nav__auth-button {
+  display: none;
+}
+
+.main-nav__contacts-list {
+  display: none;
+}
+
+.main-nav--no-js .main-nav__contacts-list,
+.main-nav--open .main-nav__contacts-list {
   @include reset-list;
+  margin-bottom: 53px;
 
   .main-nav__contacts-item {
     position: relative;
@@ -108,6 +136,16 @@
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
-    color: #192144;
+    color: $blue;
   }
+}
+
+.main-nav--no-js .main-nav__social-list,
+.main-nav--open .main-nav__social-list {
+  display: flex;
+}
+
+.main-nav__social-list {
+  color: $blue;
+  display: none;
 }

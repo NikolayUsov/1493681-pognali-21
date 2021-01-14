@@ -1,0 +1,17 @@
+.social-buttons {
+  @include reset-list;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-buttons__item {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-buttons__link {
+  color: inherit;
+}
