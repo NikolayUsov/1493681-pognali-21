@@ -1,0 +1,52 @@
+.steps {
+  @include reset-list;
+  counter-reset: stepsCounter;
+}
+
+.steps__item {
+  width: 100%;
+  min-height: 80px;
+  padding: 22px 25px 105px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: $darker-blue;
+  border-radius: 15px;
+  position: relative;
+  counter-increment: stepsCounter;
+
+  &::before {
+    content: counter(stepsCounter);
+    position: absolute;
+    top: 23px;
+    right: 25px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: $white;
+  }
+
+  &:not(:first-child) {
+    margin-top: -80px;
+  }
+
+  &:nth-child(4n + 1) {
+    background-color: $basic-orange;
+  }
+
+  &:nth-child(4n + 2) {
+    background-color: #ffa530;
+  }
+
+  &:nth-child(4n + 3) {
+    background-color: #ffbd30;
+  }
+
+  &:nth-child(4n + 4) {
+    background-color: #ffd74b;
+  }
+
+  &:last-child {
+    padding: 22px 25px 25px;
+  }
+}

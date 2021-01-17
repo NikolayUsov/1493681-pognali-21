@@ -1,0 +1,35 @@
+.about-us {
+  padding-top: 33px;
+  padding-bottom: 82px;
+  background-color: #192144;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  position: relative;
+  z-index: 100;
+}
+
+.about-us__inner {
+  padding: 0 62px 0 25px;
+}
+
+.about-us__title {
+  margin: 0;
+  margin-bottom: 19px;
+}
+
+.about-us__description {
+  margin: 0;
+  margin-bottom: 19px;
+  color: $white;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.about-us__tagline {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: bold;
+  color: $white;
+  margin: 0;
+}

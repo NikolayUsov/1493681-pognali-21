@@ -1,0 +1,39 @@
+.button {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 22px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: $derker-blue200;
+  background-color: $basic-yellow;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+  border: none;
+
+  &::after {
+    content: "";
+
+    @include triangle-right($derker-blue200, 6px);
+    display: block;
+    margin-left: auto;
+  }
+
+  &--no-text {
+    width: 60px;
+    min-height: 62px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--bordered {
+    border: 3px solid $blue;
+  }
+
+  &--no-text::after {
+    margin-left: 0;
+  }
+}
+

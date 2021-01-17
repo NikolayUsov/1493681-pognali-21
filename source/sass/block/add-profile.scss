@@ -1,0 +1,93 @@
+.add-profile {
+  background-color: #edeff6;
+  margin-top: -30px;
+  padding-top: 70px;
+  padding-bottom: 38px;
+  z-index: 70;
+  position: relative;
+
+  @include border-radius(0,0,25px,25px);
+}
+
+.add-profile__title {
+  margin: 0;
+  width: 108px;
+  padding-left: 25px;
+  margin-bottom: 56px;
+}
+
+.add-profile__image {
+  width: 100px;
+  height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("..//img/add-progile-img.png");
+  position: absolute;
+  top: 51px;
+  right: 34px;
+}
+
+.add-profile__price-list {
+  @include reset-list;
+  padding-left: 25px;
+  margin-bottom: 31px;
+  counter-reset: priceCounter;
+}
+
+.add-profile__price-item {
+  display: flex;
+  align-items: baseline;
+  position: relative;
+
+  &::after {
+    counter-increment: priceCounter;
+    content: counter(priceCounter);
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: $white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &:nth-child(3n + 1)::after {
+    background-color: $basic-orange;
+  }
+
+  &:nth-child(3n + 2)::after {
+    background-color: #ffa530;
+  }
+
+  &:nth-child(3n + 3)::after {
+    background-color: #ffbd30;
+  }
+}
+
+.add-profile__price-item-inner {
+  margin: 0;
+  flex-grow: 1;
+  padding-top: 14px;
+  padding-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-top: 1px solid $gray-100;
+}
+
+.add-profile__price-item:last-of-type .add-profile__price-item-inner {
+  border-bottom: 1px solid $gray-100;
+}
+
+.add-profile__button {
+  color: $blue-200;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  padding-left: 25px;
+}

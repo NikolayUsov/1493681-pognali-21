@@ -1,0 +1,25 @@
+.circle-level {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba($color: #000000, $alpha: 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-level__value {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $white;
+  margin-bottom: 5px;
+  border-bottom: 1px solid rgba($white, 0.3);
+}
+
+.circle-level__unit {
+  font-size: 14px;
+  line-height: 14px;
+  color: $white;
+}

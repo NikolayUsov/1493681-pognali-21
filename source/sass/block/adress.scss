@@ -1,0 +1,31 @@
+.adress {
+  position: relative;
+  z-index: 50;
+}
+
+.adress__content {
+  background-color: $basic-yellow;
+  margin-top: -30px;
+  padding-top: 70px;
+}
+
+.adress__text {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: $derker-blue200;
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 32px;
+
+  &::before {
+    @include pseudo(45px, 45px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("..//img/map-mark.svg");
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+}

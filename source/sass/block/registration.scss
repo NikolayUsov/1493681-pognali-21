@@ -1,0 +1,79 @@
+.registration {
+  background-color: $blue;
+  padding-top: 68px;
+  padding-bottom: 31px;
+  margin-top: -30px;
+  z-index: 60;
+  position: relative;
+
+  @include border-radius(0,0,25px,25px);
+}
+
+.registration__title {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 19px;
+}
+
+.registration__slogan {
+  width: 270px;
+  margin: 0;
+  margin-bottom: 39px;
+  padding: 0 35px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+}
+
+.registration__link {
+  color: $basic-yellow;
+  text-decoration: underline;
+}
+
+.registration__form {
+  display: flex;
+  margin-bottom: 29px;
+}
+
+.registration__form-input {
+  width: 100%;
+  flex-grow: 1;
+  height: 62px;
+  padding: 25px 65px 25px 25px;
+  border: none;
+  outline: none;
+  color: rgba($special-gray, 0.3);
+  font-family: "BlogerSans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+
+  @include border-radius(10px,0,0,10px);
+
+  &::placeholder {
+    font-family: "BlogerSans", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    color: rgba($special-gray, 0.3);
+  }
+}
+
+.registration__form-submit {
+  flex-shrink: 0;
+  height: 62px;
+  margin-left: -20px;
+}
+
+.registration__questions {
+  padding: 0 25px;
+  margin: 0;
+  margin-bottom: 17px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+  text-align: center;
+}

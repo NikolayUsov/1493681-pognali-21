@@ -1,4 +1,4 @@
-// Начните писать стили здесь
+
 @import "base/fonts";
 @import "base/global";
 @import "base/visually-hidden.scss";
@@ -6,8 +6,21 @@
 @import "base/mixins.scss";
 @import "base/page.scss";
 @import "block/wrapper.scss";
+@import "block/section-heading.scss";
 @import "block/main-nav.scss";
 @import "block/logo.scss";
 @import "block/social-buttons.scss";
 @import "block/promo.scss";
 @import "block/authorization.scss";
+@import "block/steps.scss";
+@import "block/about-us.scss";
+@import "block/directions.scss";
+@import "block/country-card.scss";
+@import "block/button.scss";
+@import "block/travelers.scss";
+@import "block/traveler-card.scss";
+@import "block/circle-level.scss";
+@import "block/add-profile";
+@import "block/registration";
+@import "block/contacts.scss";
+@import "block/adress.scss";

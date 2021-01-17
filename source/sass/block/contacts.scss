@@ -1,0 +1,42 @@
+.contacts {
+  @include reset-list;
+  display: block;
+}
+
+.contacts__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    width: 45px;
+    height: 45px;
+    display: block;
+    background-color: $darker-blue100;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+
+  &--phone::before {
+    background-image: url("../img/icon-telephone.svg");
+  }
+
+  &--mail::before {
+    background-image: url("../img/icon-mail.svg");
+  }
+}
+
+.contacts__link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $blue;
+
+  &--yelow {
+    color: #ffd74b;
+  }
+}

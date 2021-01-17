@@ -1,0 +1,37 @@
+.directions {
+  margin-top: -25px;
+  padding-top: 71px;
+  padding-bottom: 34px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  z-index: 90;
+  position: relative;
+  background-color: #edeff6;
+}
+
+.directions__title {
+  padding-left: 25px;
+  margin: 0;
+  margin-bottom: 19px;
+}
+
+.directions__discription {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: $special-gray;
+  padding-left: 25px;
+  padding-right: 45px;
+  margin-bottom: 60px;
+}
+
+.directions__pictures-list {
+  @include reset-list;
+  margin-bottom: 23px;
+}
+
+.directions__pictures-item {
+  &:not(:last-child) {
+    margin-bottom: 6px;
+  }
+}

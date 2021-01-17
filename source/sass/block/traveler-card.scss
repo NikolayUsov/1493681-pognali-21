@@ -1,0 +1,110 @@
+.traveler-card {
+  position: relative;
+  width: 100%;
+  max-width: 285px;
+}
+
+.traveler-card__level {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.traveler-card__country-list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: 146px;
+}
+
+.traveler-card__country-item {
+  width: 35px;
+  height: 25px;
+  margin-top: 5px;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.traveler-card__image {
+  width: 270px;
+  height: 270px;
+
+  @include border-radius(10px,10px, 0, 0);
+  overflow: hidden;
+}
+
+.traveler-card__content {
+  background-color: $white;
+  padding: 27px 45px 22px;
+
+  @include border-radius(0,0,10px,10px);
+}
+
+.traveler-card__traveler-name {
+  margin: 0;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: $derker-blue200;
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 15px;
+
+  &::before {
+    @include pseudo(6px,6px);
+    border-radius: 50%;
+    background-color: $red-offline;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+}
+
+.traveler-card__traveler-name[data-online="online"]::before {
+  background-color: $green-online;
+}
+
+.traveler-card__hobby-list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special-gray;
+  margin-bottom: 14px;
+}
+
+.traveler-card__hobby-item {
+  position: relative;
+
+  &::before {
+    content: "#";
+  }
+}
+
+.traveler-card__transport-list {
+  @include reset-list;
+  display: flex;
+  justify-content: center;
+}
+
+.traveler-card__transport-item {
+  width: 25px;
+  height: 25px;
+  background-color: grey;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+}
