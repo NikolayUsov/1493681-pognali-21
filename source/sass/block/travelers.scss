@@ -1,12 +1,15 @@
 .travelers {
   background-color: $blue;
-  padding-top: 68px;
   padding-bottom: 31px;
-  margin-top: -30px;
   z-index: 80;
   position: relative;
 
   @include border-radius(0,0,25px,25px);
+
+  &--up {
+    margin-top: -30px;
+    padding-top: 100px;
+  }
 }
 
 .travelers__card {

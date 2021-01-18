@@ -1,12 +1,15 @@
 .add-profile {
   background-color: #edeff6;
-  margin-top: -30px;
-  padding-top: 70px;
   padding-bottom: 38px;
   z-index: 70;
   position: relative;
 
   @include border-radius(0,0,25px,25px);
+
+  &--up {
+    margin-top: -30px;
+    padding-top: 100px;
+  }
 }
 
 .add-profile__title {

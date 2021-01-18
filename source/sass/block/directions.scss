@@ -1,12 +1,15 @@
 .directions {
-  margin-top: -25px;
-  padding-top: 71px;
   padding-bottom: 34px;
   border-bottom-right-radius: 25px;
   border-bottom-left-radius: 25px;
   z-index: 90;
   position: relative;
   background-color: #edeff6;
+
+  &--up {
+    margin-top: -30px;
+    padding-top: 100px;
+  }
 }
 
 .directions__title {

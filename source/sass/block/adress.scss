@@ -7,6 +7,11 @@
   background-color: $basic-yellow;
   margin-top: -30px;
   padding-top: 70px;
+  padding-bottom: 35px;
+  position: relative;
+  z-index: 50;
+
+  @include border-radius(0,0,25px,25px);
 }
 
 .adress__text {
@@ -28,4 +33,21 @@
     left: 0;
     transform: translateY(-50%);
   }
+}
+
+.adress__map {
+  margin-top: -30px;
+  width: 100%;
+  height: 424px;
+  background-color: $gray-100;
+  position: relative;
+  background-image: url("..//img/map-mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.adress__map iframe {
+  width: 100%;
+  border: none;
+  height: 100%;
 }

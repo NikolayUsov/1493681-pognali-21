@@ -2,6 +2,18 @@
   @include reset-list;
   align-items: center;
   justify-content: center;
+
+  &--yellow {
+    .social-buttons__item {
+      background-color: $basic-yellow;
+    }
+  }
+
+  &--round {
+    .social-buttons__item {
+      border-radius: 50%;
+    }
+  }
 }
 
 .social-buttons__item {
